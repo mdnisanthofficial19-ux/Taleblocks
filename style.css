@@ -43,6 +43,7 @@ a{
   background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.8'/%3E%3C/svg%3E");
 }
 
+
 /* HEADER */
 
 .site-header{
@@ -383,11 +384,6 @@ h2 em{
   overflow:hidden;
 }
 
-
-/*
-  REAL TRAIN IN CAVE POSTER
-*/
-
 .feature-art{
   position:relative;
   overflow:hidden;
@@ -397,9 +393,6 @@ h2 em{
   justify-content:center;
   background:#050405;
 }
-
-
-/* Cinematic dark overlay */
 
 .feature-art:after{
   content:"";
@@ -422,9 +415,6 @@ h2 em{
     );
 }
 
-
-/* Actual uploaded poster */
-
 .feature-poster{
   display:block;
   width:100%;
@@ -435,15 +425,9 @@ h2 em{
   transition:transform .8s ease;
 }
 
-
-/* Slight cinematic zoom on hover */
-
 .feature-card:hover .feature-poster{
   transform:scale(1.025);
 }
-
-
-/* Project number */
 
 .feature-label{
   position:absolute;
@@ -674,7 +658,7 @@ blockquote{
 }
 
 .contact-links a:hover{
-  color:#ef2730;
+  color:var(--red2);
   padding-left:8px;
 }
 
@@ -834,9 +818,6 @@ footer>a{
     min-height:260px;
   }
 
-
-  /* Mobile poster */
-
   .feature-art{
     min-height:0;
     height:auto;
@@ -878,6 +859,10 @@ footer>a{
 
   footer{
     flex-wrap:wrap;
+  }
+
+  .contact-links a{
+    font-size:16px;
   }
 
 }
